@@ -1,0 +1,263 @@
+
+/* Common */
+.left-hamberger { margin:12px 10px;}
+.btn {  cursor:pointer; }
+.sortable { color:#428bca; cursor:pointer; } /* Abhilash 17.2.2017 */
+.disabled-btn { opacity:0.4; }
+/* .search-fld { float:left; margin-right:10px; max-width:589px; } */ /* Abhilash 17.2.2017 - To be removed*/
+.search-fld-cont { max-width:650px; margin:0 auto; }
+.cust-table-cont { width:100%; overflow-x:auto; /* max-height:220px; overflow-y:auto; */ } /* Abhilash 17.2.2017 */
+.table-button-wrapper { width:150px; }
+.select-row { background:#F9DBDC !important; }
+@media(max-width:360px) {
+.cust-table { font-size:0.85em; }
+}
+.add-new-btn { float:right; margin-bottom:20px; }
+.container{ margin-top:72px; }
+.wrapper {
+    padding-left: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.wrapper.toggled {
+    padding-left: 250px;
+}
+.sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    left: 250px;
+    width: 0;
+    height: 100%;
+    margin-left: -250px;
+    overflow-y: auto;
+    background: #000;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.custom-header, .custom-toolbar { margin-left:0px; -webkit-transition: all 0.5s ease; -moz-transition: all 0.5s ease;  -o-transition: all 0.5s ease; transition: all 0.5s ease; }  /* Abhilash 1.3.2017 */
+.custom-toolbar {display:none;  }  /* Abhilash 2.3.2017 */
+.cust-table tr td:first-child , .cust-table tr th:first-child { display:none; }  /* Abhilash 2.3.2017 */
+.show-toolbar { display:block; } /* Abhilash 2.3.2017 */
+.wrapper.toggled  .custom-header  { margin-left:250px;  -webkit-transition: all 0.5s ease; -moz-transition: all 0.5s ease;  -o-transition: all 0.5s ease; transition: all 0.5s ease;}  /* Abhilash 1.3.2017 */
+.wrapper.toggled .sidebar-wrapper {
+    width: 250px;
+}
+
+.page-content-wrapper {
+    width: 100%;
+    position: absolute;
+    padding: 15px;
+}
+
+.wrapper.toggled .page-content-wrapper {
+    position: absolute;
+    margin-right: -250px;
+}
+
+/* Sidebar Styles */
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.sidebar-icon { display:inline; margin-right:10px; }
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #999999;
+}
+
+.sidebar-nav li a:hover, .sidebar-nav li .active  {  /* Abhilash 16.2.2017 */
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255,255,255,0.2);
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+    height: 65px;
+    font-size: 18px;
+    line-height: 60px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+    color: #999999;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color: #fff;
+    background: none;
+}
+
+@media(min-width:768px) {
+.cust-table thead tr th:first-child { padding: 1.1rem; } /* Abhilash 2.3.2017 */
+	.cust-table tr td:first-child , .cust-table thead tr th:first-child { display:block; } /* Abhilash 2.3.2017 */
+	.custom-header { margin-left:250px; -webkit-transition: all 0.5s ease; -moz-transition: all 0.5s ease;  -o-transition: all 0.5s ease; transition: all 0.5s ease;}  /* Abhilash 1.3.2017 */
+	.wrapper.toggled  .custom-header { margin-left:0px;  -webkit-transition: all 0.5s ease; -moz-transition: all 0.5s ease;  -o-transition: all 0.5s ease; transition: all 0.5s ease;}  /* Abhilash 1.3.2017 */
+	.custom-toolbar { display:none;  } /* Abhilash 2.3.2017 */
+    .wrapper {
+        padding-left: 250px;
+    }
+
+    .wrapper.toggled {
+        padding-left: 0;
+    }
+
+    .sidebar-wrapper {
+        width: 250px;
+    }
+
+    .wrapper.toggled .sidebar-wrapper {
+        width: 0;
+    }
+
+    .page-content-wrapper {
+        padding: 20px;
+        position: relative;
+    }
+
+    .wrapper.toggled .page-content-wrapper {
+        position: relative;
+        margin-right: 0;
+    }
+	
+}
+.toolbar-del-icon, .toolbar-edit-icon { position:absolute; margin:15px 0; right:15px;} /* Abhilash 2.3.2017 */
+.toolbar-edit-icon {  right:80px; } /* Abhilash 2.3.2017 */
+.hamburger-btn { position:absolute; margin:15px 0; left:15px; cursor:pointer; width:58px; height:43px; }
+.profile-pic { position:absolute; margin:15px 0; right:15px; cursor:pointer; }
+.content {margin-bottom:25px; padding:0 16px;}
+.page-title { font-size:18px; margin:0 auto; margin-top:20px; margin-bottom:25px; text-align:center; }
+
+@media(max-width:360px) {
+	 .wrapper.toggled .profile-pic  { display:none; }
+	 .wrapper.toggled .page-title { visibility:hidden; }
+	.header { height:72px; }
+}
+.table-list-loader { background:url(images/loader.svg); width:100px; height:100px; position:absolute; margin:0 50%; margin-top:10%; } /* Abhilash 16.2.2017 */
+@media(max-width:360px) {  /* Abhilash 16.2.2017 */
+	.table-list-loader {  margin:0 30%; margin-top:30%; }
+}  /* Abhilash 16.2.2017 */
+/* Login */
+.form-signin {max-width: 330px;padding: 15px; margin: 0px auto;  margin-top:10vh; box-shadow:2px 5px 50px #ccc; }
+.form-signin  .form-control { margin-bottom:10px; }
+.login-logo { border-radius:50%; width:150px; height:150px; display:block; line-height:4; border:3px solid orange; margin:0 auto; text-align:center; font-size:34px; margin-bottom:50px; margin-top:30px; }
+@media(max-width:360px) {
+	.form-signin {max-width: 330px;padding: 15px; margin: 0px auto;  margin-top:20px; box-shadow:2px 5px 50px #ccc; }
+}
+/* App center */
+.category-btn { height:130px; display:block; width:41%; margin-left:6%; margin-bottom:20px; cursor:pointer; border-radius:4px; padding:15px; }
+.ctg-1 { background:#72C979; }
+.ctg-1:hover { background:#59C060;  }
+.ctg-icon-mails, .ctg-icon-agenda, .ctg-icon-tasks, .ctg-icon-call-history , .ctg-icon-rapports , .ctg-icon-helpdesk, .ctg-icon-companies, .ctg-icon-invoices, .ctg-icon-payments , .ctg-icon-lettering  { background:#59C060; width:40px; height:40px; text-align:center; border-radius:50%; padding:10px; color:#FFF; margin:0 auto; margin-top:20px;   }
+.ctg-label { text-align:center; margin-top:8px; color:#FFF;}
+.ctg-sub-lbl { font-size:10px; color:#FFF; font-style:italic; text-align:center; bottom:0px; margin-top:5px; position:relative; }
+.ctg-2 { background:#7BCEAA;}
+.ctg-2:hover { background:#62C69B; }
+.ctg-icon-agenda { background:#62C69B; }
+.ctg-3 {background:#455C69; }
+.ctg-3:hover { background:#223D4D; }
+.ctg-icon-tasks { background:#223D4D; }
+.ctg-4 { background:#F1AE72; }
+.ctg-4:hover { background:#F0A058; }
+.ctg-icon-call-history { background:#F0A058;}
+.ctg-5 { background:#ED886F; }
+.ctg-5:hover { background:#EB7254;}
+.ctg-icon-rapports { background:#EB7254; }
+.ctg-6 { background:#6AB2D4; }
+.ctg-6:hover { background:#4EA4CD; }
+.ctg-icon-helpdesk { background:#4EA4CD; }
+.ctg-7 {background:#F4D03F; }
+.ctg-7:hover {background:#FFB61E; }
+.ctg-icon-companies {  background:#FFB61E;  }
+.ctg-8 { background:#ABB7B7; }
+.ctg-8:hover { background:#95A5A6; }
+.ctg-icon-invoices { background:#95A5A6; }
+.ctg-9 { background:#BE90D4; }
+.ctg-9:hover { background:#8E44AD; }
+.ctg-icon-payments { background:#8E44AD; }
+.ctg-10 { background:#FAA945; }
+.ctg-10:hover { background:#CA6924; }
+.ctg-icon-lettering { background:#CA6924; }
+
+/* Home Page */
+.mcrm-calender { width:310px; margin: 0 auto; margin-top:12px; }
+.mcrm-nav { width:36px; height:36px; text-align:center; display:block; float:left; font-size:24px; color:#2E9BD3; margin-top:37px; cursor:pointer; }
+.mcrm-month { text-align:center; width:310px; font-size:14px; color:#808182; font-weight:bold; cursor:pointer; }
+.mcrm-week { margin-top:6px; float:left; }
+.mcrm-week-day, .mcrm-week-date  { color:#2E9BD3; cursor:pointer; line-height:2.5; width:34px; height:34px; float:left; text-align:center; font-size:12px; font-weight:bold; }
+.mcrm-week-date  { color:#3C3C3C; }
+.mcrm-date-selected, .mcrm-week-date:hover { border:1px solid #F17373; color:#F17373; }
+.mcrm-date-selected:hover { background:#F17373; color:#FFF; }
+.dashboard-block-title { color:#808182; font-size:16px; font-weight:bold; border-bottom:1px solid #E7E7E7; padding-bottom:5px; }
+.dashboard-block-list { padding:10px 5px; border-bottom:1px solid #E7E7E7; font-size:14px; cursor:pointer; }
+.dashboard-block-list:hover { background:#D2EFFE; }
+.dashboard-block-list-title { color:#3C3C3C; font-weight:bold; text-overflow:ellipsis; overflow:hidden; white-space:nowrap; }
+.db-blist-table { width:100%; }
+.db-blist-table td { width:33.33%; vertical-align:top; }
+.task-priority { margin: 0 auto; width:70px; display:block;} 
+.no-task-msg { margin-top:10px; text-align:center; }
+.high-pr { color:#F17373; }
+.medium-pr { color:#BDF173; }
+.low-pr { color:#DBD6D6; }
+.user-icon { color:#925207; }
+/* Listing Page */
+.filter-block { margin-top:20px;}
+.del-icon { margin-right:10px; }
+.edit-icon { margin-top:10px; }
+.frm-btn { width:120px; margin-right:10px; }
+.frm-btn-block { display:block; margin:0 auto; width:270px; margin-top:20px; margin-bottom:20px; }
+/* Abhilash 17.2.2017 - To be removed */
+/* @media(max-width:360px) {
+	.del-icon { margin-right:0px; margin-bottom:10px; }
+} */
+
+/* Edit invoice */
+.remove-icon { color:red; cursor:pointer; }
+.popup-btn-block {  display:block; margin:0 auto; width:270px; }
+
+/* Calender */
+.optionbtngrp { margin-bottom:20px; }
+@keyframes FlipX {
+0% {
+    transform: perspective(400px) rotateX(90deg);
+    opacity: 0;
+}
+40% {
+    transform: perspective(400px) rotateX(-10deg);
+}
+70% {
+    transform: perspective(400px) rotateX(10deg);
+}
+100% {
+    transform: perspective(400px) rotateX(0deg);
+    opacity: 1;
+}
+}
+.open > .flip-anim { animation-name: FlipX; animation-duration: 0.4s; animation-fill-mode: both; }
+.day-table , .week-table { table-layout:fixed; }
+.day-table td, .week-table td { vertical-align:top; padding:0px; height:36px; }
+.week-table td { }
+.week-table-top thead th { text-align:center; }
+.week-table-top  td { width:120px; }
+/* Edit Company */
+
+.add-btn { margin-left:20px; }
